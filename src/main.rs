@@ -1,11 +1,11 @@
 use rand::prelude::SliceRandom;
 use std::env;
 
-mod utils;
+mod util;
 mod constants;
 
 use crate::constants::{HEADING,FONT};
-use crate::utils::{load_ini, set_font, get_all_fonts};
+use crate::util::{load_ini, set_font, get_all_fonts};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
