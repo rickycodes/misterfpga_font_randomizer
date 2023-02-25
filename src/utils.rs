@@ -5,8 +5,7 @@ use std::fs;
 use crate::constants::{FONT, HEADING};
 
 pub(crate) fn get_font_path() -> String {
-    let font_path = DIR.to_owned() + FONT;
-    font_path.to_string()
+    DIR.to_owned() + FONT
 }
 
 pub(crate) fn get_all_fonts() -> Vec<String> {
