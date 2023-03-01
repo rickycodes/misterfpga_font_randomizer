@@ -1,8 +1,7 @@
 use ini::Ini;
-use crate::constants::DIR;
 use std::fs;
 
-use crate::constants::{FONT, HEADING};
+use crate::constants::{DIR, FONT, HEADING};
 
 pub(crate) fn get_font_path() -> String {
     DIR.to_owned() + FONT
