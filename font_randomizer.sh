@@ -13,4 +13,9 @@ cp "$FAT"MiSTer_original.ini "$FAT"MiSTer.ini
 # remove backup
 rm "$FAT"MiSTer_original.ini
 
-reboot
+# kill the app
+killall MiSTer
+# sync and restart
+sync
+PATH=/media/fat:$PATH
+"$FAT"MiSTer >/dev/ttyS0 2>/dev/ttyS0 </dev/null &
